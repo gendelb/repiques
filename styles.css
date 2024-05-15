@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #111; /* Cor de fundo escura */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#drum-kit {
+  width: 400px; /* Largura do kit de bateria */
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.drum-button {
+  width: calc(33.33% - 10px); /* Definindo a largura dos botões */
+  padding: 15px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333; /* Cor de fundo mais escura */
+  color: #fff; /* Cor do texto */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.drum-button:hover {
+  background-color: #555; /* Cor de fundo mais clara no hover */
+}
+
+/* Animação para quando um botão é clicado */
+.drum-button:active {
+  transform: scale(1.1); /* Aumenta o tamanho do botão */
+}
